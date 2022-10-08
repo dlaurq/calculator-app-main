@@ -21,6 +21,18 @@ $Clr-Txt-2:hsl(0, 0, 100%);
     .calculator{
         header{
             color: $Clr-Txt-2;
+            .theme-container{
+                .theme-selector{
+                    background-color: $Clr-BG-Toggle-Keypad;
+                    div{
+                        background-color: $Clr-Key-BG-2;
+                    }
+
+                    .hide-button{
+                        background-color: $Clr-BG-Toggle-Keypad;
+                    }
+                }
+            }
         }
 
         .result{
