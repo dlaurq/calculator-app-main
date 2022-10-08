@@ -1,0 +1,131 @@
+
+@import './scss/theme1';
+@import './scss/theme2';
+@import './scss/theme3';
+
+@font-face {
+    font-family: LeagueSpartan;
+    src: url(./fonts/LeagueSpartan-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: LeagueSpartan;
+   font-size: 32px;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    .calculator{
+        width: 18rem;
+        height: 33rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 3rem;
+
+            width: 100%;
+
+            h1{
+                font-size: 1em;
+            }
+
+            .theme-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                width: 45%;
+
+                h2{
+                    font-size: .4em;
+                    text-transform: uppercase;
+                    
+                    margin-top: auto;
+                    margin-bottom: .3rem;
+                }
+
+                .selector-container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+
+                .theme-index{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    font-size: .4em;
+                    margin-bottom: .2rem;
+                }
+
+                .theme-selector{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    border-radius: 2rem;
+                    div{
+                        $size: .8rem;
+                        width: $size;
+                        height: $size;
+                        border-radius: 50%;
+                        margin: .3rem;
+                        background-color: none !important;
+                    }
+                }
+            }
+        }
+
+        .result{
+            $height: 5rem;
+            height: $height;
+            line-height: $height;
+            text-align: right;
+            font-size: 1.2em;
+            padding: 0 1rem;
+            border-radius: .5rem;
+        }
+
+        main{
+            padding: 1rem;
+            display: grid;
+            gap: .8rem;
+            grid-template-columns: repeat(4, 1fr);
+            border-radius: .5rem;
+            
+            .button{
+                $height: 3.4rem;
+                height: $height;
+                width: $height;
+                text-align: center;
+                line-height: $height;
+            }
+            .reset, .equal{
+                grid-column: span 2;
+                width: 100%;
+                
+            }
+
+            .reset, .del{
+                text-transform: uppercase;
+                font-size:.7em;
+            }
+
+        }
+    }
+}
+

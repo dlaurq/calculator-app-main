@@ -5,22 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Calculator app</title>
+
 </head>
-<body>
-
-
+<body class="theme-1">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="calculator">
+    <header>
+      <h1>calc</h1>
+      <div class="theme-container">
+        <h2>theme</h2>
+        <div class="selector-container">
+          <div class="theme-index">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <div class="theme-selector">
+            <div class="theme1"></div>
+            <div class="theme2 hide-button"></div>
+            <div class="theme3 hide-button"></div>
+          </div>
+          
+        </div>
+      </div>
+    </header>
+
+    <div class="result">123,456,789.01</div>
+
+    <main>
+      <div class="button">7</div>
+      <div class="button">8</div>
+      <div class="button">9</div>
+      <div class="button del">del</div>
+      <div class="button">4</div>
+      <div class="button">5</div>
+      <div class="button">6</div>
+      <div class="button">+</div>
+      <div class="button">1</div>
+      <div class="button">2</div>
+      <div class="button">3</div>
+      <div class="button">-</div>
+      <div class="button">.</div>
+      <div class="button">0</div>
+      <div class="button">/</div>
+      <div class="button">x</div>
+      <div class="button reset">reset</div>
+      <div class="button equal">=</div>
+    </main>
   </div>
+  
+
 </body>
 </html>

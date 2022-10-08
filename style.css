@@ -1,0 +1,228 @@
+.theme-1 {
+  background-color: #3a4764;
+}
+
+.theme-1 .calculator header {
+  color: white;
+}
+
+.theme-1 .calculator header .theme-container .theme-selector {
+  background-color: #232c43;
+}
+
+.theme-1 .calculator header .theme-container .theme-selector div {
+  background-color: #d03f2f;
+}
+
+.theme-1 .calculator header .theme-container .theme-selector .hide-button {
+  background-color: #232c43;
+}
+
+.theme-1 .calculator .result {
+  color: white;
+  background-color: #182034;
+}
+
+.theme-1 .calculator main {
+  background-color: #232c43;
+}
+
+.theme-1 .calculator main .button {
+  color: #444b5a;
+  background-color: #eae3dc;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 -0.3rem inset #b4a597;
+          box-shadow: 0 -0.3rem inset #b4a597;
+}
+
+.theme-1 .calculator main .del, .theme-1 .calculator main .reset {
+  background-color: #637097;
+  color: white;
+  -webkit-box-shadow: 0 -0.3rem inset #404e72;
+          box-shadow: 0 -0.3rem inset #404e72;
+}
+
+.theme-1 .calculator main .equal {
+  background-color: #d03f2f;
+  color: white;
+  -webkit-box-shadow: 0 -0.3rem inset #93261a;
+          box-shadow: 0 -0.3rem inset #93261a;
+}
+
+@font-face {
+  font-family: LeagueSpartan;
+  src: url(./fonts/LeagueSpartan-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: LeagueSpartan;
+  font-size: 32px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .calculator {
+  width: 18rem;
+  height: 33rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .calculator header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  width: 100%;
+}
+
+body .calculator header h1 {
+  font-size: 1em;
+}
+
+body .calculator header .theme-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
+}
+
+body .calculator header .theme-container h2 {
+  font-size: .4em;
+  text-transform: uppercase;
+  margin-top: auto;
+  margin-bottom: .3rem;
+}
+
+body .calculator header .theme-container .selector-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .calculator header .theme-container .theme-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .4em;
+  margin-bottom: .2rem;
+}
+
+body .calculator header .theme-container .theme-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem;
+}
+
+body .calculator header .theme-container .theme-selector div {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  margin: .3rem;
+  background-color: none !important;
+}
+
+body .calculator .result {
+  height: 5rem;
+  line-height: 5rem;
+  text-align: right;
+  font-size: 1.2em;
+  padding: 0 1rem;
+  border-radius: .5rem;
+}
+
+body .calculator main {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  gap: .8rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  border-radius: .5rem;
+}
+
+body .calculator main .button {
+  height: 3.4rem;
+  width: 3.4rem;
+  text-align: center;
+  line-height: 3.4rem;
+}
+
+body .calculator main .reset, body .calculator main .equal {
+  grid-column: span 2;
+  width: 100%;
+}
+
+body .calculator main .reset, body .calculator main .del {
+  text-transform: uppercase;
+  font-size: .7em;
+}
+/*# sourceMappingURL=style.css.map */
