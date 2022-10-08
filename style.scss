@@ -17,10 +17,13 @@
 body{
    font-family: LeagueSpartan;
    font-size: 32px;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
     .calculator{
-        width: 90%;
-        margin: 0 auto;
-        height: 100vh;
+        width: 18rem;
+        height: 33rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -49,6 +52,9 @@ body{
                 h2{
                     font-size: .4em;
                     text-transform: uppercase;
+                    
+                    margin-top: auto;
+                    margin-bottom: .3rem;
                 }
 
                 .selector-container{
@@ -63,6 +69,7 @@ body{
                     justify-content: space-around;
                     align-items: center;
                     font-size: .4em;
+                    margin-bottom: .2rem;
                 }
 
                 .theme-selector{

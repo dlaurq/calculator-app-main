@@ -64,12 +64,21 @@
 body {
   font-family: LeagueSpartan;
   font-size: 32px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .calculator {
-  width: 90%;
-  margin: 0 auto;
-  height: 100vh;
+  width: 18rem;
+  height: 33rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,6 +133,8 @@ body .calculator header .theme-container {
 body .calculator header .theme-container h2 {
   font-size: .4em;
   text-transform: uppercase;
+  margin-top: auto;
+  margin-bottom: .3rem;
 }
 
 body .calculator header .theme-container .selector-container {
@@ -152,6 +163,7 @@ body .calculator header .theme-container .theme-index {
       -ms-flex-align: center;
           align-items: center;
   font-size: .4em;
+  margin-bottom: .2rem;
 }
 
 body .calculator header .theme-container .theme-selector {
