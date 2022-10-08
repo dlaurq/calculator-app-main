@@ -6,12 +6,47 @@ $Clr-BG-Screen: hsl(224, 36%, 15%);
 //Keys
 $Clr-Key-BG-1: hsl(225, 21%, 49%);
 $Clr-Key-BG-2: hsl(6, 63%, 50%);
-$Clr-Key-BG-3: hsl(6, 63%, 50%);
+$Clr-Key-BG-3: hsl(30, 25%, 89%);
 $Clr-Key-Shadow-1: hsl(224, 28%, 35%);
 $Clr-Key-Shadow-2: hsl(6, 70%, 34%);
-$Clr-Key-Shadow-3: hsl(6, 70%, 34%);
+$Clr-Key-Shadow-3: hsl(28, 16%, 65%);
 
 //Text
 $Clr-Txt-1:hsl(221, 14%, 31%);
-$Clr-Txt-2:hsl(221, 14%, 31%);
+$Clr-Txt-2:hsl(0, 0, 100%);
 
+.theme-1{
+    background-color: $Clr-BG-Main;
+
+    .calculator{
+        header{
+            color: $Clr-Txt-2;
+        }
+
+        .result{
+            color: $Clr-Txt-2;
+            background-color: $Clr-BG-Screen;
+        }
+        main{
+            background-color: $Clr-BG-Toggle-Keypad;
+            
+            .button{
+                color: $Clr-Txt-1;
+                background-color: $Clr-Key-BG-3;
+                border-radius: .3rem;
+                box-shadow: 0 -.3rem inset $Clr-Key-Shadow-3;
+            }
+            .del, .reset{
+                background-color: $Clr-Key-BG-1;
+                color: $Clr-Txt-2;
+                box-shadow: 0 -.3rem inset $Clr-Key-Shadow-1;
+            }
+            .equal{
+                background-color: $Clr-Key-BG-2;
+                color: $Clr-Txt-2;
+                box-shadow: 0 -.3rem inset $Clr-Key-Shadow-2;
+            }
+        }
+
+    }
+}

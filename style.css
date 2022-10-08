@@ -1,7 +1,121 @@
+.theme-1 {
+  background-color: #3a4764;
+}
+
+.theme-1 .calculator header {
+  color: white;
+}
+
+.theme-1 .calculator .result {
+  color: white;
+  background-color: #182034;
+}
+
+.theme-1 .calculator main {
+  background-color: #232c43;
+}
+
+.theme-1 .calculator main .button {
+  color: #444b5a;
+  background-color: #eae3dc;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 -0.3rem inset #b4a597;
+          box-shadow: 0 -0.3rem inset #b4a597;
+}
+
+.theme-1 .calculator main .del, .theme-1 .calculator main .reset {
+  background-color: #637097;
+  color: white;
+  -webkit-box-shadow: 0 -0.3rem inset #404e72;
+          box-shadow: 0 -0.3rem inset #404e72;
+}
+
+.theme-1 .calculator main .equal {
+  background-color: #d03f2f;
+  color: white;
+  -webkit-box-shadow: 0 -0.3rem inset #93261a;
+          box-shadow: 0 -0.3rem inset #93261a;
+}
+
+@font-face {
+  font-family: LeagueSpartan;
+  src: url(./fonts/LeagueSpartan-Bold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: LeagueSpartan;
+  font-size: 32px;
+}
+
+body .calculator {
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .calculator header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10%;
+}
+
+body .calculator .result {
+  height: 5rem;
+  line-height: 5rem;
+  text-align: right;
+  font-size: 1.2em;
+  padding: 0 1rem;
+  border-radius: .5rem;
+}
+
+body .calculator main {
+  padding: 1.2rem;
+  display: -ms-grid;
+  display: grid;
+  gap: .8rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  border-radius: .5rem;
+}
+
+body .calculator main .button {
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+body .calculator main .reset, body .calculator main .equal {
+  grid-column: span 2;
+  width: 100%;
+}
+
+body .calculator main .reset, body .calculator main .del {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

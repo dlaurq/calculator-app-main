@@ -1,3 +1,13 @@
+
+@import './scss/theme1';
+@import './scss/theme2';
+@import './scss/theme3';
+
+@font-face {
+    font-family: LeagueSpartan;
+    src: url(./fonts/LeagueSpartan-Bold.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,5 +15,58 @@
 }
 
 body{
-    
+   font-family: LeagueSpartan;
+   font-size: 32px;
+    .calculator{
+        width: 90%;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 10%;
+        }
+
+        .result{
+            $height: 5rem;
+            height: $height;
+            line-height: $height;
+            text-align: right;
+            font-size: 1.2em;
+            padding: 0 1rem;
+            border-radius: .5rem;
+        }
+
+        main{
+            padding: 1.2rem;
+            display: grid;
+            gap: .8rem;
+            grid-template-columns: repeat(4, 1fr);
+            border-radius: .5rem;
+            
+            .button{
+                $height: 4rem;
+                height: $height;
+                width: $height;
+                text-align: center;
+                line-height: $height;
+            }
+            .reset, .equal{
+                grid-column: span 2;
+                width: 100%;
+                
+            }
+
+            .reset, .del{
+                text-transform: uppercase;
+            }
+
+        }
+    }
 }
+
