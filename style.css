@@ -14,7 +14,15 @@
   background-color: #d03f2f;
 }
 
+.theme-1 .calculator header .theme-container .theme-selector div:hover {
+  background-color: #f26454;
+}
+
 .theme-1 .calculator header .theme-container .theme-selector .hide-button {
+  background-color: #232c43;
+}
+
+.theme-1 .calculator header .theme-container .theme-selector .hide-button:hover {
   background-color: #232c43;
 }
 
@@ -35,6 +43,10 @@
           box-shadow: 0 -0.3rem inset #b4a597;
 }
 
+.theme-1 .calculator main .button:hover {
+  background-color: white;
+}
+
 .theme-1 .calculator main .del, .theme-1 .calculator main .reset {
   background-color: #637097;
   color: white;
@@ -42,11 +54,19 @@
           box-shadow: 0 -0.3rem inset #404e72;
 }
 
+.theme-1 .calculator main .del:hover, .theme-1 .calculator main .reset:hover {
+  background-color: #a5b5d9;
+}
+
 .theme-1 .calculator main .equal {
   background-color: #d03f2f;
   color: white;
   -webkit-box-shadow: 0 -0.3rem inset #93261a;
           box-shadow: 0 -0.3rem inset #93261a;
+}
+
+.theme-1 .calculator main .equal:hover {
+  background-color: #f26454;
 }
 
 @font-face {
@@ -188,6 +208,7 @@ body .calculator header .theme-container .theme-selector div {
   border-radius: 50%;
   margin: .3rem;
   background-color: none !important;
+  cursor: pointer;
 }
 
 body .calculator .result {
@@ -214,6 +235,7 @@ body .calculator main .button {
   width: 3.4rem;
   text-align: center;
   line-height: 3.4rem;
+  cursor: pointer;
 }
 
 body .calculator main .reset, body .calculator main .equal {
