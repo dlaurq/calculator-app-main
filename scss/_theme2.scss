@@ -1,6 +1,5 @@
 
 //Background
-
 $Clr-BG-Main:hsl(0, 0%, 90%);
 $Clr-BG-Toggle-Keypad:hsl(0, 5%, 81%);
 $Clr-BG-Screen:hsl(0, 0%, 93%);
@@ -17,9 +16,20 @@ $Clr-Key-Shadow-3:hsl(35, 11%, 61%);
 $Clr-Txt-1:hsl(60, 10%, 19%);
 $Clr-Txt-2:hsl(0, 0, 100%);
 
+//Hold
+$Clr-Hold-1:hsl(25, 80%, 47%);
+$Clr-Hold-2:white;
+$Clr-Hold-3:hsl(185, 35%, 49%);
+
+
 
 
 .theme2{
     background-color: $Clr-BG-Main;
+    
+
+    header, .result{
+        color: $Clr-Txt-1 !important;
+    }
     @import "./ThemeBody";
 }

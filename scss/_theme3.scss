@@ -16,7 +16,21 @@ $Clr-Txt-1:hsl(52, 100%, 62%);
 $Clr-Txt-2:hsl(198, 20%, 13%);
 $Clr-Txt-3:hsl(0, 0, 100%);
 
+//Hold
+$Clr-Hold-1:hsl(176, 81%, 41%);
+$Clr-Hold-2:hsl(268, 52%, 48%);
+$Clr-Hold-3:hsl(281, 66%, 38%);
+
 .theme3{
     background-color: $Clr-BG-Main;
+
+    header, .result{
+        color: $Clr-Txt-1 !important;
+    }
+
+    .del, .reset{
+        color: $Clr-Txt-3 !important;
+    }
+
     @import "./ThemeBody";
 }
