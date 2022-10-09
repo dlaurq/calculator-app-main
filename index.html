@@ -11,7 +11,7 @@
   <title>Calculator app</title>
 
 </head>
-<body class="theme-1">
+<body class="theme1">
   
   <div class="calculator">
     <header>
@@ -25,9 +25,9 @@
             <div>3</div>
           </div>
           <div class="theme-selector">
-            <div class="theme1"></div>
-            <div class="theme2 hide-button"></div>
-            <div class="theme3 hide-button"></div>
+            <div class="theme1" onclick="switchTo('theme1')"></div>
+            <div class="theme2 hide-button" onclick="switchTo('theme2')"></div>
+            <div class="theme3 hide-button" onclick="switchTo('theme3')"></div>
           </div>
           
         </div>
@@ -58,6 +58,6 @@
     </main>
   </div>
   
-
+<script src="./main.js"></script>
 </body>
 </html>

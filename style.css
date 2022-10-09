@@ -1,41 +1,41 @@
-.theme-1 {
+.theme1 {
   background-color: #3a4764;
 }
 
-.theme-1 .calculator header {
+.theme1 .calculator header {
   color: white;
 }
 
-.theme-1 .calculator header .theme-container .theme-selector {
+.theme1 .calculator header .theme-container .theme-selector {
   background-color: #232c43;
 }
 
-.theme-1 .calculator header .theme-container .theme-selector div {
+.theme1 .calculator header .theme-container .theme-selector div {
   background-color: #d03f2f;
 }
 
-.theme-1 .calculator header .theme-container .theme-selector div:hover {
+.theme1 .calculator header .theme-container .theme-selector div:hover {
   background-color: #f26454;
 }
 
-.theme-1 .calculator header .theme-container .theme-selector .hide-button {
+.theme1 .calculator header .theme-container .theme-selector .hide-button {
   background-color: #232c43;
 }
 
-.theme-1 .calculator header .theme-container .theme-selector .hide-button:hover {
+.theme1 .calculator header .theme-container .theme-selector .hide-button:hover {
   background-color: #232c43;
 }
 
-.theme-1 .calculator .result {
+.theme1 .calculator .result {
   color: white;
   background-color: #182034;
 }
 
-.theme-1 .calculator main {
+.theme1 .calculator main {
   background-color: #232c43;
 }
 
-.theme-1 .calculator main .button {
+.theme1 .calculator main .button {
   color: #444b5a;
   background-color: #eae3dc;
   border-radius: .3rem;
@@ -43,70 +43,70 @@
           box-shadow: 0 -0.3rem inset #b4a597;
 }
 
-.theme-1 .calculator main .button:hover {
+.theme1 .calculator main .button:hover {
   background-color: white;
 }
 
-.theme-1 .calculator main .del, .theme-1 .calculator main .reset {
+.theme1 .calculator main .del, .theme1 .calculator main .reset {
   background-color: #637097;
   color: white;
   -webkit-box-shadow: 0 -0.3rem inset #404e72;
           box-shadow: 0 -0.3rem inset #404e72;
 }
 
-.theme-1 .calculator main .del:hover, .theme-1 .calculator main .reset:hover {
+.theme1 .calculator main .del:hover, .theme1 .calculator main .reset:hover {
   background-color: #a5b5d9;
 }
 
-.theme-1 .calculator main .equal {
+.theme1 .calculator main .equal {
   background-color: #d03f2f;
   color: white;
   -webkit-box-shadow: 0 -0.3rem inset #93261a;
           box-shadow: 0 -0.3rem inset #93261a;
 }
 
-.theme-1 .calculator main .equal:hover {
+.theme1 .calculator main .equal:hover {
   background-color: #f26454;
 }
 
-.theme-2 {
+.theme2 {
   background-color: #e6e6e6;
 }
 
-.theme-2 .calculator header {
+.theme2 .calculator header {
   color: white;
 }
 
-.theme-2 .calculator header .theme-container .theme-selector {
+.theme2 .calculator header .theme-container .theme-selector {
   background-color: #d1cccc;
 }
 
-.theme-2 .calculator header .theme-container .theme-selector div {
+.theme2 .calculator header .theme-container .theme-selector div {
   background-color: #ca5502;
 }
 
-.theme-2 .calculator header .theme-container .theme-selector div:hover {
+.theme2 .calculator header .theme-container .theme-selector div:hover {
   background-color: #f26454;
 }
 
-.theme-2 .calculator header .theme-container .theme-selector .hide-button {
+.theme2 .calculator header .theme-container .theme-selector .hide-button {
   background-color: #d1cccc;
 }
 
-.theme-2 .calculator header .theme-container .theme-selector .hide-button:hover {
+.theme2 .calculator header .theme-container .theme-selector .hide-button:hover {
   background-color: #d1cccc;
 }
 
-.theme-2 .calculator .result {
+.theme2 .calculator .result {
   color: white;
   background-color: #ededed;
 }
 
-.theme-2 .calculator main {
+.theme2 .calculator main {
   background-color: #d1cccc;
 }
 
-.theme-2 .calculator main .button {
+.theme2 .calculator main .button {
   color: #35352c;
   background-color: #e5e4e1;
   border-radius: .3rem;
@@ -114,70 +114,70 @@
           box-shadow: 0 -0.3rem inset #a69d91;
 }
 
-.theme-2 .calculator main .button:hover {
+.theme2 .calculator main .button:hover {
   background-color: white;
 }
 
-.theme-2 .calculator main .del, .theme-2 .calculator main .reset {
+.theme2 .calculator main .del, .theme2 .calculator main .reset {
   background-color: #377f86;
   color: white;
   -webkit-box-shadow: 0 -0.3rem inset #1b5f65;
           box-shadow: 0 -0.3rem inset #1b5f65;
 }
 
-.theme-2 .calculator main .del:hover, .theme-2 .calculator main .reset:hover {
+.theme2 .calculator main .del:hover, .theme2 .calculator main .reset:hover {
   background-color: #a5b5d9;
 }
 
-.theme-2 .calculator main .equal {
+.theme2 .calculator main .equal {
   background-color: #ca5502;
   color: white;
   -webkit-box-shadow: 0 -0.3rem inset #893901;
           box-shadow: 0 -0.3rem inset #893901;
 }
 
-.theme-2 .calculator main .equal:hover {
+.theme2 .calculator main .equal:hover {
   background-color: #f26454;
 }
 
-.theme-3 {
+.theme3 {
   background-color: #160628;
 }
 
-.theme-3 .calculator header {
+.theme3 .calculator header {
   color: #1b2428;
 }
 
-.theme-3 .calculator header .theme-container .theme-selector {
+.theme3 .calculator header .theme-container .theme-selector {
   background-color: #1d0934;
 }
 
-.theme-3 .calculator header .theme-container .theme-selector div {
+.theme3 .calculator header .theme-container .theme-selector div {
   background-color: #00e0d1;
 }
 
-.theme-3 .calculator header .theme-container .theme-selector div:hover {
+.theme3 .calculator header .theme-container .theme-selector div:hover {
   background-color: #f26454;
 }
 
-.theme-3 .calculator header .theme-container .theme-selector .hide-button {
+.theme3 .calculator header .theme-container .theme-selector .hide-button {
   background-color: #1d0934;
 }
 
-.theme-3 .calculator header .theme-container .theme-selector .hide-button:hover {
+.theme3 .calculator header .theme-container .theme-selector .hide-button:hover {
   background-color: #1d0934;
 }
 
-.theme-3 .calculator .result {
+.theme3 .calculator .result {
   color: #1b2428;
   background-color: #1d0934;
 }
 
-.theme-3 .calculator main {
+.theme3 .calculator main {
   background-color: #1d0934;
 }
 
-.theme-3 .calculator main .button {
+.theme3 .calculator main .button {
   color: #ffe53d;
   background-color: #341c4f;
   border-radius: .3rem;
@@ -185,29 +185,29 @@
           box-shadow: 0 -0.3rem inset #871c9c;
 }
 
-.theme-3 .calculator main .button:hover {
+.theme3 .calculator main .button:hover {
   background-color: white;
 }
 
-.theme-3 .calculator main .del, .theme-3 .calculator main .reset {
+.theme3 .calculator main .del, .theme3 .calculator main .reset {
   background-color: #58077d;
   color: #1b2428;
   -webkit-box-shadow: 0 -0.3rem inset #bc15f4;
           box-shadow: 0 -0.3rem inset #bc15f4;
 }
 
-.theme-3 .calculator main .del:hover, .theme-3 .calculator main .reset:hover {
+.theme3 .calculator main .del:hover, .theme3 .calculator main .reset:hover {
   background-color: #a5b5d9;
 }
 
-.theme-3 .calculator main .equal {
+.theme3 .calculator main .equal {
   background-color: #00e0d1;
   color: #1b2428;
   -webkit-box-shadow: 0 -0.3rem inset #6cf9f2;
           box-shadow: 0 -0.3rem inset #6cf9f2;
 }
 
-.theme-3 .calculator main .equal:hover {
+.theme3 .calculator main .equal:hover {
   background-color: #f26454;
 }
 
