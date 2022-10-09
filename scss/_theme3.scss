@@ -1,17 +1,36 @@
 //Background
-$T3-Clr-BG-Main:hsl(268, 75%, 9%);
-$T3-Clr-BG-Toggle-Keypad:hsl(268, 71%, 12%);
-$T3-Clr-BG-Screen:hsl(268, 71%, 12%);
+$Clr-BG-Main:hsl(268, 75%, 9%);
+$Clr-BG-Toggle-Keypad:hsl(268, 71%, 12%);
+$Clr-BG-Screen:hsl(268, 71%, 12%);
 
 //Keys
-$T3-Clr-Key-BG-1:hsl(281, 89%, 26%);
-$T3-Clr-Key-BG-2:hsl(176, 100%, 44%);
-$T3-Clr-Key-BG-3:hsl(268, 47%, 21%);
-$T3-Clr-Key-Shadow-1:hsl(285, 91%, 52%);
-$T3-Clr-Key-Shadow-2:hsl(177, 92%, 70%);
-$T3-Clr-Key-Shadow-3:hsl(290, 70%, 36%);
+$Clr-Key-BG-1:hsl(281, 89%, 26%);
+$Clr-Key-BG-2:hsl(176, 100%, 44%);
+$Clr-Key-BG-3:hsl(268, 47%, 21%);
+$Clr-Key-Shadow-1:hsl(285, 91%, 52%);
+$Clr-Key-Shadow-2:hsl(177, 92%, 70%);
+$Clr-Key-Shadow-3:hsl(290, 70%, 36%);
 
 //Text
-$T3-Clr-Txt-1:hsl(52, 100%, 62%);
-$T3-Clr-Txt-2:hsl(198, 20%, 13%);
-$T3-Clr-Txt-3:hsl(0, 0, 100%);
+$Clr-Txt-1:hsl(52, 100%, 62%);
+$Clr-Txt-2:hsl(198, 20%, 13%);
+$Clr-Txt-3:hsl(0, 0, 100%);
+
+//Hold
+$Clr-Hold-1:hsl(176, 81%, 41%);
+$Clr-Hold-2:hsl(268, 52%, 48%);
+$Clr-Hold-3:hsl(281, 66%, 38%);
+
+.theme3{
+    background-color: $Clr-BG-Main;
+
+    header, .result{
+        color: $Clr-Txt-1 !important;
+    }
+
+    .del, .reset{
+        color: $Clr-Txt-3 !important;
+    }
+
+    @import "./ThemeBody";
+}

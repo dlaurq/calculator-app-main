@@ -15,50 +15,23 @@ $Clr-Key-Shadow-3: hsl(28, 16%, 65%);
 $Clr-Txt-1:hsl(221, 14%, 31%);
 $Clr-Txt-2:hsl(0, 0, 100%);
 
-.theme-1{
+//Hold
+$Clr-Hold-1:hsl(6, 86%, 64%);
+$Clr-Hold-2:white;
+$Clr-Hold-3:hsl(222, 41%, 75%);
+
+
+.theme1{
     background-color: $Clr-BG-Main;
-
-    .calculator{
-        header{
-            color: $Clr-Txt-2;
-            .theme-container{
-                .theme-selector{
-                    background-color: $Clr-BG-Toggle-Keypad;
-                    div{
-                        background-color: $Clr-Key-BG-2;
-                    }
-
-                    .hide-button{
-                        background-color: $Clr-BG-Toggle-Keypad;
-                    }
-                }
-            }
-        }
-
-        .result{
-            color: $Clr-Txt-2;
-            background-color: $Clr-BG-Screen;
-        }
-        main{
-            background-color: $Clr-BG-Toggle-Keypad;
-            
-            .button{
-                color: $Clr-Txt-1;
-                background-color: $Clr-Key-BG-3;
-                border-radius: .3rem;
-                box-shadow: 0 -.3rem inset $Clr-Key-Shadow-3;
-            }
-            .del, .reset{
-                background-color: $Clr-Key-BG-1;
-                color: $Clr-Txt-2;
-                box-shadow: 0 -.3rem inset $Clr-Key-Shadow-1;
-            }
-            .equal{
-                background-color: $Clr-Key-BG-2;
-                color: $Clr-Txt-2;
-                box-shadow: 0 -.3rem inset $Clr-Key-Shadow-2;
-            }
-        }
-
-    }
+    @import "./ThemeBody";
 }
+   
+   
+   
+    
+   
+       
+   
+
+  
+   

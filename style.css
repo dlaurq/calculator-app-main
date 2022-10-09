@@ -1,33 +1,41 @@
-.theme-1 {
+.theme1 {
   background-color: #3a4764;
 }
 
-.theme-1 .calculator header {
+.theme1 .calculator header {
   color: white;
 }
 
-.theme-1 .calculator header .theme-container .theme-selector {
+.theme1 .calculator header .theme-container .theme-selector {
   background-color: #232c43;
 }
 
-.theme-1 .calculator header .theme-container .theme-selector div {
+.theme1 .calculator header .theme-container .theme-selector div {
   background-color: #d03f2f;
 }
 
-.theme-1 .calculator header .theme-container .theme-selector .hide-button {
+.theme1 .calculator header .theme-container .theme-selector div:hover {
+  background-color: #f26454;
+}
+
+.theme1 .calculator header .theme-container .theme-selector .hide-button {
   background-color: #232c43;
 }
 
-.theme-1 .calculator .result {
+.theme1 .calculator header .theme-container .theme-selector .hide-button:hover {
+  background-color: #232c43;
+}
+
+.theme1 .calculator .result {
   color: white;
   background-color: #182034;
 }
 
-.theme-1 .calculator main {
+.theme1 .calculator main {
   background-color: #232c43;
 }
 
-.theme-1 .calculator main .button {
+.theme1 .calculator main .button {
   color: #444b5a;
   background-color: #eae3dc;
   border-radius: .3rem;
@@ -35,18 +43,184 @@
           box-shadow: 0 -0.3rem inset #b4a597;
 }
 
-.theme-1 .calculator main .del, .theme-1 .calculator main .reset {
+.theme1 .calculator main .button:hover {
+  background-color: white;
+}
+
+.theme1 .calculator main .del, .theme1 .calculator main .reset {
   background-color: #637097;
   color: white;
   -webkit-box-shadow: 0 -0.3rem inset #404e72;
           box-shadow: 0 -0.3rem inset #404e72;
 }
 
-.theme-1 .calculator main .equal {
+.theme1 .calculator main .del:hover, .theme1 .calculator main .reset:hover {
+  background-color: #a5b5d9;
+}
+
+.theme1 .calculator main .equal {
   background-color: #d03f2f;
   color: white;
   -webkit-box-shadow: 0 -0.3rem inset #93261a;
           box-shadow: 0 -0.3rem inset #93261a;
+}
+
+.theme1 .calculator main .equal:hover {
+  background-color: #f26454;
+}
+
+.theme2 {
+  background-color: #e6e6e6;
+}
+
+.theme2 header, .theme2 .result {
+  color: #35352c !important;
+}
+
+.theme2 .calculator header {
+  color: white;
+}
+
+.theme2 .calculator header .theme-container .theme-selector {
+  background-color: #d1cccc;
+}
+
+.theme2 .calculator header .theme-container .theme-selector div {
+  background-color: #ca5502;
+}
+
+.theme2 .calculator header .theme-container .theme-selector div:hover {
+  background-color: #d86818;
+}
+
+.theme2 .calculator header .theme-container .theme-selector .hide-button {
+  background-color: #d1cccc;
+}
+
+.theme2 .calculator header .theme-container .theme-selector .hide-button:hover {
+  background-color: #d1cccc;
+}
+
+.theme2 .calculator .result {
+  color: white;
+  background-color: #ededed;
+}
+
+.theme2 .calculator main {
+  background-color: #d1cccc;
+}
+
+.theme2 .calculator main .button {
+  color: #35352c;
+  background-color: #e5e4e1;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 -0.3rem inset #a69d91;
+          box-shadow: 0 -0.3rem inset #a69d91;
+}
+
+.theme2 .calculator main .button:hover {
+  background-color: white;
+}
+
+.theme2 .calculator main .del, .theme2 .calculator main .reset {
+  background-color: #377f86;
+  color: white;
+  -webkit-box-shadow: 0 -0.3rem inset #1b5f65;
+          box-shadow: 0 -0.3rem inset #1b5f65;
+}
+
+.theme2 .calculator main .del:hover, .theme2 .calculator main .reset:hover {
+  background-color: #51a1a9;
+}
+
+.theme2 .calculator main .equal {
+  background-color: #ca5502;
+  color: white;
+  -webkit-box-shadow: 0 -0.3rem inset #893901;
+          box-shadow: 0 -0.3rem inset #893901;
+}
+
+.theme2 .calculator main .equal:hover {
+  background-color: #d86818;
+}
+
+.theme3 {
+  background-color: #160628;
+}
+
+.theme3 header, .theme3 .result {
+  color: #ffe53d !important;
+}
+
+.theme3 .del, .theme3 .reset {
+  color: white !important;
+}
+
+.theme3 .calculator header {
+  color: #1b2428;
+}
+
+.theme3 .calculator header .theme-container .theme-selector {
+  background-color: #1d0934;
+}
+
+.theme3 .calculator header .theme-container .theme-selector div {
+  background-color: #00e0d1;
+}
+
+.theme3 .calculator header .theme-container .theme-selector div:hover {
+  background-color: #14bdb2;
+}
+
+.theme3 .calculator header .theme-container .theme-selector .hide-button {
+  background-color: #1d0934;
+}
+
+.theme3 .calculator header .theme-container .theme-selector .hide-button:hover {
+  background-color: #1d0934;
+}
+
+.theme3 .calculator .result {
+  color: #1b2428;
+  background-color: #1d0934;
+}
+
+.theme3 .calculator main {
+  background-color: #1d0934;
+}
+
+.theme3 .calculator main .button {
+  color: #ffe53d;
+  background-color: #341c4f;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 -0.3rem inset #871c9c;
+          box-shadow: 0 -0.3rem inset #871c9c;
+}
+
+.theme3 .calculator main .button:hover {
+  background-color: #763bba;
+}
+
+.theme3 .calculator main .del, .theme3 .calculator main .reset {
+  background-color: #58077d;
+  color: #1b2428;
+  -webkit-box-shadow: 0 -0.3rem inset #bc15f4;
+          box-shadow: 0 -0.3rem inset #bc15f4;
+}
+
+.theme3 .calculator main .del:hover, .theme3 .calculator main .reset:hover {
+  background-color: #7821a1;
+}
+
+.theme3 .calculator main .equal {
+  background-color: #00e0d1;
+  color: #1b2428;
+  -webkit-box-shadow: 0 -0.3rem inset #6cf9f2;
+          box-shadow: 0 -0.3rem inset #6cf9f2;
+}
+
+.theme3 .calculator main .equal:hover {
+  background-color: #14bdb2;
 }
 
 @font-face {
@@ -188,6 +362,7 @@ body .calculator header .theme-container .theme-selector div {
   border-radius: 50%;
   margin: .3rem;
   background-color: none !important;
+  cursor: pointer;
 }
 
 body .calculator .result {
@@ -214,6 +389,7 @@ body .calculator main .button {
   width: 3.4rem;
   text-align: center;
   line-height: 3.4rem;
+  cursor: pointer;
 }
 
 body .calculator main .reset, body .calculator main .equal {
