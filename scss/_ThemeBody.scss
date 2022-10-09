@@ -1,0 +1,61 @@
+
+    .calculator{
+        header{
+            color: $Clr-Txt-2;
+            .theme-container{
+                .theme-selector{
+                    background-color: $Clr-BG-Toggle-Keypad;
+                    div{
+                        background-color: $Clr-Key-BG-2;
+                        &:hover{
+                            background-color: hsl(6, 86%, 64%);
+                        }
+                    }
+
+                    .hide-button{
+                        background-color: $Clr-BG-Toggle-Keypad;
+                        &:hover{
+                            background-color: $Clr-BG-Toggle-Keypad;
+                        }
+                    }
+                }
+            }
+        }
+
+        .result{
+            color: $Clr-Txt-2;
+            background-color: $Clr-BG-Screen;
+        }
+        main{
+            background-color: $Clr-BG-Toggle-Keypad;
+            
+            .button{
+                color: $Clr-Txt-1;
+                background-color: $Clr-Key-BG-3;
+                border-radius: .3rem;
+                box-shadow: 0 -.3rem inset $Clr-Key-Shadow-3;
+                &:hover{
+                    background-color: white;
+                }
+            }
+            .del, .reset{
+                background-color: $Clr-Key-BG-1;
+                color: $Clr-Txt-2;
+                box-shadow: 0 -.3rem inset $Clr-Key-Shadow-1;
+                &:hover{
+                    background-color: hsl(222, 41%, 75%);
+                }
+            }
+            .equal{
+                background-color: $Clr-Key-BG-2;
+                color: $Clr-Txt-2;
+                box-shadow: 0 -.3rem inset $Clr-Key-Shadow-2;
+                &:hover{
+                    background-color: hsl(6, 86%, 64%);
+                }
+            }
+        }
+
+    }
+
+
