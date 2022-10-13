@@ -33,63 +33,80 @@ buttonContainer.addEventListener('click', e =>{
             display.textContent = buttonValue;
             operatorIsPress = false
         }
-        else{
-            display.textContent = displayValue + buttonValue;
-        }
-        
+        else if(!button.classList.contains("dot")) display.textContent = displayValue + buttonValue;
+        else if(display.textContent.indexOf(".")== -1) display.textContent = displayValue + buttonValue;
     }
 
     if(button.classList.contains("operator")){
-        operatorIsPress = true;
-        lastKey = button;
+        
 
+        //Daca nu este primul operator
         if(lastOperator !== undefined) {
-            secondNumber = display.textContent
+            
+            if(lastKey.classList.contains("number")){
+                secondNumber = display.textContent
+            } 
 
+            //Daca apas egal
             if(button.classList.contains('equal') && !lastOperator.classList.contains('equal')){
+
                 firstNumber = parseFloat(firstNumber)
                 secondNumber = parseFloat(secondNumber)
-                Equals(firstNumber, lastOperator, secondNumber)
-                lastOperator = button;
+                //console.log(firstNumber, lastOperator, secondNumber)
+                firstNumber = Equals(firstNumber, lastOperator, secondNumber)
+                display.textContent = firstNumber;
+
+                console.log(firstNumber, lastOperator, secondNumber)
             }
 
+            //Daca apas + - * /
             if(button.classList.contains('plus')||
                 button.classList.contains('minus')||
                 button.classList.contains('div')||
                 button.classList.contains('mult')){
-                    firstNumber = parseFloat(firstNumber)
-                    secondNumber = parseFloat(secondNumber)
-                    firstNumber = Equals(firstNumber, lastOperator, secondNumber)
                     lastOperator = button;
                 }
 
         }
+        //Daca este primul operator
         if(lastOperator === undefined) {
             firstNumber = display.textContent
             lastOperator = button;
 
         }
+        operatorIsPress = true;
+        lastKey = button;
+    }
+
+    if(button.classList.contains("del")){
+        if(display.textContent.length == 1) display.textContent = 0; //Pt cifra
+        if(display.textContent.length > 1) display.textContent = display.textContent.slice(0,-1); //Pt numar
+    }
+
+    if(button.classList.contains("reset")){
+        //TO DO
     }
 
 
     
 
     function Equals(firstNumber, operator, secondNumber){
-        console.log(firstNumber, operator, secondNumber)
+        //console.log(firstNumber, operator, secondNumber)
         firstNumber = String(firstNumber)
         secondNumber = String(secondNumber)
         firstNumber = parseFloat(firstNumber)
         secondNumber = parseFloat(secondNumber)
-        if(operator.classList.contains('plus')) firstNumber = firstNumber + secondNumber;
-        if(operator.classList.contains('minus')) firstNumber = firstNumber - secondNumber;
-        if(operator.classList.contains('div')) firstNumber = firstNumber / secondNumber;
-        if(operator.classList.contains('mult')) firstNumber = firstNumber * secondNumber;
-        display.textContent = firstNumber;
-        return firstNumber
-        console.log(firstNumber)
+        if(operator.classList.contains('plus')) return firstNumber + secondNumber;
+        if(operator.classList.contains('minus')) return firstNumber - secondNumber;
+        if(operator.classList.contains('div')) return firstNumber / secondNumber;
+        if(operator.classList.contains('mult')) return firstNumber * secondNumber;
+        //console.log(firstNumber, operator, secondNumber)
     }
-    console.log(firstNumber, secondNumber, lastOperator)
-    console.log(typeof firstNumber,typeof secondNumber)
+
+
+
+    //console.log(firstNumber, secondNumber, lastKey)
+    //console.log(typeof firstNumber,typeof secondNumber)
 });
 
 
