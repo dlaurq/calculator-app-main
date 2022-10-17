@@ -84,6 +84,12 @@ buttonContainer.addEventListener('click', e =>{
     }
 
     if(button.classList.contains("reset")){
+        firstNumber = 0;
+        secondNumber = undefined;
+        lastOperator = undefined;
+        lastKey = undefined;
+        operatorIsPress = false;
+        display.textContent = 0;
         //TO DO
     }
 
