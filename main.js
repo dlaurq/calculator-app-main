@@ -26,6 +26,7 @@ buttonContainer.addEventListener('click', e =>{
     const displayValue = display.textContent;
     const button = e.target;
     const buttonValue = button.textContent;
+
     
     if(button.classList.contains('number')){
         lastKey = button;
@@ -52,11 +53,8 @@ buttonContainer.addEventListener('click', e =>{
 
                 firstNumber = parseFloat(firstNumber)
                 secondNumber = parseFloat(secondNumber)
-                //console.log(firstNumber, lastOperator, secondNumber)
                 firstNumber = Equals(firstNumber, lastOperator, secondNumber)
                 display.textContent = firstNumber;
-
-                console.log(firstNumber, lastOperator, secondNumber)
             }
 
             //Daca apas + - * /
@@ -81,6 +79,7 @@ buttonContainer.addEventListener('click', e =>{
     if(button.classList.contains("del")){
         if(display.textContent.length == 1) display.textContent = 0; //Pt cifra
         if(display.textContent.length > 1) display.textContent = display.textContent.slice(0,-1); //Pt numar
+        firstNumber = parseFloat(display.textContent) 
     }
 
     if(button.classList.contains("reset")){
@@ -97,7 +96,6 @@ buttonContainer.addEventListener('click', e =>{
     
 
     function Equals(firstNumber, operator, secondNumber){
-        //console.log(firstNumber, operator, secondNumber)
         firstNumber = String(firstNumber)
         secondNumber = String(secondNumber)
         firstNumber = parseFloat(firstNumber)
@@ -106,13 +104,10 @@ buttonContainer.addEventListener('click', e =>{
         if(operator.classList.contains('minus')) return firstNumber - secondNumber;
         if(operator.classList.contains('div')) return firstNumber / secondNumber;
         if(operator.classList.contains('mult')) return firstNumber * secondNumber;
-        //console.log(firstNumber, operator, secondNumber)
     }
 
 
-
-    //console.log(firstNumber, secondNumber, lastKey)
-    //console.log(typeof firstNumber,typeof secondNumber)
+    display.textContent = display.textContent.substring(0,11)
 });
 
 
