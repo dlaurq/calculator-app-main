@@ -372,6 +372,7 @@ body .calculator .result {
   font-size: 1.2em;
   padding: 0 1rem;
   border-radius: .5rem;
+  overflow: hidden;
 }
 
 body .calculator main {
